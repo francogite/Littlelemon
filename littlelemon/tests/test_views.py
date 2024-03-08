@@ -13,3 +13,9 @@ class MenuItemViewTest(TestCase):
         item = self.menu1
         serializer = MenuSerializer(data=item)
         self.assertTrue(serializer.is_valid)     
+        item = self.menu2
+        serializer = MenuSerializer(data=item)
+        self.assertTrue(serializer.is_valid)     
+        item = self.menu3
+        serializer = MenuSerializer(data=item)
+        self.assertTrue(serializer.is_valid)     
